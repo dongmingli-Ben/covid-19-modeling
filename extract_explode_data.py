@@ -91,5 +91,5 @@ def post_process(path, save_path):
     with open(save_path, 'wb') as f:
         pickle.dump(res, f)
 
-# extract('data/time_series_covid19_confirmed_global.csv', 'data/filtered-explode.txt')
+extract('data/time_series_covid19_confirmed_global.csv', 'data/filtered-explode.txt')
 post_process('data/filtered-explode.txt', 'data/processed-explode.txt')
